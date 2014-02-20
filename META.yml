@@ -1,14 +1,43 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Time-Duration-ja
-version:      0.02
-version_from: lib/Time/Duration/ja.pm
-installdirs:  site
+---
+abstract: 'describe Time duration in Japanese'
+author:
+  - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
+build_requires:
+  Test::More: 0.32
+configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Time-Duration-ja
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+provides:
+  Time::Duration::ja:
+    file: lib/Time/Duration/ja.pm
+    version: 0.03
 requires:
-    Encode:                        0
-    encoding:                      0
-    Test::More:                    0.32
-    Time::Duration:                1.02
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.27
+  Encode: 0
+  Time::Duration: 1.02
+  encoding: 0
+resources:
+  bugtracker: https://github.com/miyagawa/Time-Duration-ja/issues
+  homepage: https://github.com/miyagawa/Time-Duration-ja
+  repository: git://github.com/miyagawa/Time-Duration-ja.git
+version: 0.03
+x_contributors:
+  - 'miyagawa <miyagawa@65690182-5df0-0310-9871-95da5a3706e7>'
+  - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
